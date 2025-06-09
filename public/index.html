@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 400px; margin: 2rem auto; }
+  form { display: flex; flex-direction: column; gap: 1rem; }
+  label { font-weight: bold; }
+  input[type="text"] { padding: 0.5rem; font-size: 1rem; }
+  button { padding: 0.5rem; font-size: 1rem; cursor: pointer; background: #0066cc; color: white; border: none; }
+</style>
+</head>
+<body>
+    <nav>
+    <a href="/cadastro">Cadastro</a> |
+    <a href="/produtos">Produtos</a> |
+    <a href="/">Logout</a>
+  </nav>
+  <h1>Login</h1>
+  <form method="POST" action="/api/login">
+    <label for="nome">Nome do usuário:</label>
+    <input type="text" id="nome" name="nome" required />
+    <button type="submit">Entrar</button>
+  </form>
+</body>
+</html>
